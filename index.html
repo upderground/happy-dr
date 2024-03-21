@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>С днем рождения!!!</title>
+<script type="text/javascript">
+function resultar() { 
+secretCode = document.getElementByID("happy").value;
+alert(secretCode);
+if(secretCode == "1232") { 
+document.getElementById("msg").innerHTML = "<p>Поздравляю! Ты подобрала тайный код! Следующее задание: ПРИДУМЫВАЕМ =)))))</p>";
+} 
+else { 
+alert("Код не подходит =((( Попробуй еще");
+}
+</script>
+</head>
+<body>
+<p>Введи сюда свой код. Если ты угадала, откроется записка</p>
+<input type="text" value="" id="happy" name="happy" />
+<input type="button" value="Открыть подсказку" onclick="resultar();" />
+<p id="msg">=)</p>
+</body>
+</html>
